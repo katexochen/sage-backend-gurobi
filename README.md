@@ -1,6 +1,6 @@
-# Sage contaier with numerical backends Gurobi
+# Sage container with Gurobi backend
 
-This repo provides a [SageMath](https://www.sagemath.org/) container with an [Gurobi](https://www.gurobi.com/)
+This repo provides a [SageMath](https://www.sagemath.org/) container with a [Gurobi](https://www.gurobi.com/)
 and [Sage numerical backends Gurobi](https://github.com/sagemath/sage-numerical-backends-gurobi) installation.
 
 ## Get a Gurobi license
