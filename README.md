@@ -28,7 +28,6 @@ SAGE_FILE=foo.sage
 GRB_LIC=gurobi.lic
 
 docker run \
-	-it \
 	--rm \
 	-v $GRB_LIC:/opt/gurobi/gurobi.lic \
 	-v $SAGE_FILE:/workspace/run.sage \
