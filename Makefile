@@ -31,11 +31,11 @@ else ifeq ($(COMMITS_SINCE_TAG),)
 	@echo "No new commits since last tag, nothing to push"
 else
 	@echo "New commits since last tag, releasing $(NEXT_VER_TAG)"
-	DOCKER_BUILDKIT=1 docker build -t "$(CONTAINER_NAME):$(NEXT_VER)" -f Containerfile .
-	docker image tag $(CONTAINER_NAME):$(NEXT_VER) $(CONTAINER_NAME):latest
-	git tag -a $(NEXT_VER) -m "Release $(NEXT_VER)"
+	DOCKER_BUILDKIT=1 docker build -t "$(CONTAINER_NAME):$(NEXT_VER_TAG)" -f Containerfile .
+	docker image tag $(CONTAINER_NAME):$(NEXT_VER_TAG) $(CONTAINER_NAME):latest
+	git tag -a $(NEXT_VER_TAG) -m "Release $(NEXT_VER_TAG)"
 	git push
-	git push origin $(NEXT_VER)
-	docker push $(CONTAINER_NAME):$(NEXT_VER)
+	git push origin $(NEXT_VER_TAG)
+	docker push $(CONTAINER_NAME):$(NEXT_VER_TAG)
 	docker push $(CONTAINER_NAME):latest
 endif
