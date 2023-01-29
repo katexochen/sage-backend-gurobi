@@ -11,7 +11,7 @@ Register at [Gurobi](https://www.gurobi.com/) and get a WLS license.
 
 ```shell
 IMAGE=ghcr.io/katexochen/sage-backend-gurobi/sage:latest
-GRB_LIC=gurobi.lic
+GRB_LIC=$(realpath gurobi.lic)
 
 docker run \
         -it \
@@ -24,8 +24,8 @@ docker run \
 
 ```shell
 IMAGE=ghcr.io/katexochen/sage-backend-gurobi/sage:latest
-SAGE_FILE=foo.sage
-GRB_LIC=gurobi.lic
+SAGE_FILE=$(realpath foo.sage)
+GRB_LIC=$(realpath gurobi.lic)
 
 docker run \
 	--rm \
@@ -33,4 +33,3 @@ docker run \
 	-v $SAGE_FILE:/workspace/run.sage \
 	$IMAGE run.sage
 ```
-
