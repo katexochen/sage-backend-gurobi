@@ -5,7 +5,7 @@ and [Sage numerical backends Gurobi](https://github.com/sagemath/sage-numerical-
 
 ## Get a Gurobi license
 
-Register at [Gurobi](https://www.gurobi.com/) and get a WLS license.
+Register at [Gurobi](https://www.gurobi.com/) and get a [WLS](https://www.gurobi.com/features/academic-wls-license/) license.
 
 ## Interactive sage shell
 
