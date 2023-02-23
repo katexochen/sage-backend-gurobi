@@ -24,8 +24,8 @@ docker run \
 
 ```shell
 IMAGE=ghcr.io/katexochen/sage-backend-gurobi/sage:latest
-SAGE_FILE=$(realpath foo.sage)
-GRB_LIC=$(realpath gurobi.lic)
+SAGE_FILE=$(realpath foo.sage) # Replace foo.sage with the sage file you want to execute.
+GRB_LIC=$(realpath gurobi.lic) # Your gurobi license file.
 
 docker run \
 	--rm \
